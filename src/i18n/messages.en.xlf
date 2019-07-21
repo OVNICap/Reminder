@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="fr" datatype="plaintext" original="ng2.template" target-language="en">
+    <body>
+      <trans-unit id="c33803108fec1a7b112b04e91cda9aa2c8cb2293" datatype="html">
+        <source><x id="ICU" equiv-text="{list.count, plural, =0 {...} =1 {...} other {...}}"/>.</source><target state="new"><x id="ICU" equiv-text="{list.count, plural, =0 {...} =1 {...} other {...}}"/>.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ovnigames/framework/lib/games-list/games-list.component.d.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2afd26d4be3ae876ed3c9850c5ad5c7ed3d5888d" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {0 games are being created} =1 {1 game is being created} other {<x id="INTERPOLATION" equiv-text="{{list.count}}"/> games are being created} }</source><target state="new">{VAR_PLURAL, plural, =0 {0 games are being created} =1 {1 game is being created} other {<x id="INTERPOLATION" equiv-text="{{list.count}}"/> games are being created} }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ovnigames/framework/lib/games-list/games-list.component.d.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fb959b7b3e607378749cbd9eec1da4874d718076" datatype="html">
+        <source>Try our favorites:</source><target state="new">Try our favorites:</target>
+        <source>Try our favorites:</source><target state="new">Try our favorites:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ovnigames/framework/lib/games-list/games-list.component.d.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ea55e5ff7af35af1b5a3ad81be9379cb60a138c6" datatype="html">
+        <source>by <x id="INTERPOLATION" equiv-text="{{ game.owner.name }}"/></source><target state="new">by <x id="INTERPOLATION" equiv-text="{{ game.owner.name }}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ovnigames/framework/lib/games-list/games-list.component.d.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e0921c4dcf4dcf22f505accb5d6c1d9481c8cb1d" datatype="html">
+        <source>Or create your own game now!</source><target state="new">Or create your own game now!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ovnigames/framework/lib/games-list/games-list.component.d.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="270d70f4d3c4b07cc4ba50c216042b236a2dc18b" datatype="html">
+        <source>Create a new game</source><target state="new">Create a new game</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ovnigames/framework/lib/games-list/games-list.component.d.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c32ef07f8803a223a83ed17024b38e8d82292407" datatype="html">
+        <source>Password</source><target state="new">Password</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ovnigames/framework/lib/login/login.component.d.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3eb49d60bd859eb2d9d3a6d380cdf4e0b8252333" datatype="html">
+        <source>Remember me</source><target state="new">Remember me</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ovnigames/framework/lib/login/login.component.d.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6765b4c916060f6bc42d9bb69e80377dbcb5e4e9" datatype="html">
+        <source>Login</source><target state="new">Login</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ovnigames/framework/lib/login/login.component.d.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1b518e7f8c067fa55ea797bb1b35b4a2d31dccbc" datatype="html">
+        <source>Or</source><target state="new">Or</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ovnigames/framework/lib/login/login.component.d.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d48541efc5da0ca1dafc78a35f1ed8f64a3272e9" datatype="html">
+        <source>
+          Connexion failed or aborted.
+        </source><target state="new">
+          Connexion failed or aborted.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ovnigames/framework/lib/login/login.component.d.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8809b83fb987af0d809ccb25679804e86bb1df78" datatype="html">
+        <source>Game name</source><target state="new">Game name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ovnigames/framework/lib/game-creator/game-creator.component.d.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e980bf0bca7ade8099f4fd4f8c13d31b16f1414a" datatype="html">
+        <source>Default language</source><target state="new">Default language</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ovnigames/framework/lib/game-creator/game-creator.component.d.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="07ef8121f374d883c89da58f562bfc7759c23741" datatype="html">
+        <source>You can still add translations later</source><target state="new">You can still add translations later</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">../node_modules/@ovnigames/framework/lib/game-creator/game-creator.component.d.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit><trans-unit id="917762f042a6bfb54899fd760aa9a07c4aec51f7" datatype="html">
+        <source>Remind</source><target state="new">Remind</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">App title</note>
+      </trans-unit><trans-unit id="699c5a43144a08c2442b2f0cc83187be1cf091f5" datatype="html">
+        <source>All my reminders</source><target state="new">All my reminders</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">App catchline</note>
+        <note priority="1" from="meaning">slogan</note>
+      </trans-unit><trans-unit id="d22932f5540744117213f5eb6b05d255398307a6" datatype="html">
+        <source>Reminder</source><target state="new">Reminder</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">App title</note>
+      </trans-unit><trans-unit id="ec9a6bc82210e0105ef45b65c45fde85b2d810e1" datatype="html">
+        <source>First item</source><target state="new">First item</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/list/list.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit><trans-unit id="f85ba58b6078977cf5335c980ee2eb4efeb0a64c" datatype="html">
+        <source>Item name</source><target state="new">Item name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/list/list.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit><trans-unit id="8434d4a28744d7df82cd39ef8da4266fcbc40064" datatype="html">
+        <source>Start</source><target state="new">Start</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/list/list.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit><trans-unit id="b68ce78c3f2c548391d812c248217f8a212491e1" datatype="html">
+        <source>End</source><target state="new">End</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/list/list.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit><trans-unit id="ab21ab68ee334da6678c93acc994be42d3190d32" datatype="html">
+        <source>8:00,12:30,19:00</source><target state="new">8:00,12:30,19:00</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/list/list.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit><trans-unit id="3bbce5fef7e1151da052a4e529453edb340e3912" datatype="html">
+        <source>Hours</source><target state="new">Hours</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/list/list.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit><trans-unit id="f40932c4961010f6dba9ce8c1a0e2e566b8aefef" datatype="html">
+        <source>Quantity (or quantity calculation formula)</source><target state="new">Quantity (or quantity calculation formula)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/list/list.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit><trans-unit id="ca30c1aa79fb5ab487fbd2caa4ca01f2f6691d70" datatype="html">
+        <source>Quantity</source><target state="new">Quantity</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/list/list.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit><trans-unit id="f6755cff4957d5c3c89bafce5651f1b6fa2b1fd9" datatype="html">
+        <source>Add</source><target state="new">Add</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/list/list.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit><trans-unit id="2ddabfefc95aa7bbeec03c31c04e9404ac440dc4" datatype="html">
+        <source>
+    Quantity might be a number or a formula. Formulas can use variables:
+  </source><target state="new">
+    Quantity might be a number or a formula. Formulas can use variables:
+  </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/list/list.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit><trans-unit id="1d0debbd6cdae0b261fbe4179820ee5bcc4ab700" datatype="html">
+        <source>it gives you the nth day from the start</source><target state="new">it gives you the nth day from the start</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/list/list.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit><trans-unit id="6465733a588b9883062cb640237add52d0388512" datatype="html">
+        <source>it gives you the nth day from the end</source><target state="new">it gives you the nth day from the end</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/list/list.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit><trans-unit id="f2b160092bd9961d537d289efd195069ac9a1b26" datatype="html">
+        <source>it will be 1 if it's Monday, 2 if it's Tuesday, ... 7 if it's Sunday.</source><target state="new">it will be 1 if it's Monday, 2 if it's Tuesday, ... 7 if it's Sunday.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/list/list.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit><trans-unit id="bece2f8c4d35c2748eecc4bfdc67ff8911edd383" datatype="html">
+        <source>
+    Lists
+  </source><target state="new">
+    Lists
+  </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/lists/lists.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit><trans-unit id="7dab1ed4813993e7e1a4dc82b77f5ff8f6fa7a73" datatype="html">
+        <source>Pharmaceuticals</source><target state="new">Pharmaceuticals</target>
+        
+      <context-group purpose="location"><context context-type="sourcefile">app/lists/lists.component.html</context><context context-type="linenumber">21</context></context-group></trans-unit><trans-unit id="81e25d6b94153f566603cf0edc10f4e7b082aa49" datatype="html">
+        <source>List name</source><target state="new">List name</target>
+        
+      <context-group purpose="location"><context context-type="sourcefile">app/lists/lists.component.html</context><context context-type="linenumber">21</context></context-group></trans-unit><trans-unit id="70a67e04629f6d412db0a12d51820b480788d795" datatype="html">
+        <source>Create</source><target state="new">Create</target>
+        
+      <context-group purpose="location"><context context-type="sourcefile">app/lists/lists.component.html</context><context context-type="linenumber">24</context></context-group></trans-unit>
+      
+
+      
+      
+      
+      
+    </body>
+  </file>
+</xliff>

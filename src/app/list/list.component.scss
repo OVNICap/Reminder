@@ -1,0 +1,42 @@
+mat-card {
+  mat-form-field,
+  button {
+    width: 100%;
+  }
+}
+
+h1 {
+  display: flex;
+
+  mat-spinner {
+    margin: 12px;
+  }
+
+  button {
+    flex-grow: 0;
+    position: relative;
+    top: -1px
+  }
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+li {
+  line-height: 32px;
+
+  button {
+    float: right;
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+
+code {
+  margin-right: 5px;
+  padding: 1px;
+  background: rgba(0, 0, 0, 0.05);
+}

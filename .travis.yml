@@ -1,0 +1,14 @@
+
+before_script:
+  - npm i --production
+script:
+  - npm run build-prod
+  - npm run build-prod-fr
+deploy:
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    local_dir: dist/website
+    on:
+      branch: master
+      condition: $WEBSITE

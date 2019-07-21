@@ -1,0 +1,99 @@
+@import '~@angular/material/theming';
+
+$medium-margin: 2em;
+$small-margin: 1em;
+$active-link: map-get($mat-pink, 400);
+$light-link: map-get($mat-pink, 600);
+$dark-link: map-get($mat-pink, 900);
+$light-button: white;
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: background .2s;
+
+  > .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer a {
+    color: $light-link;
+
+    &:hover {
+      color: $dark-link;
+    }
+  }
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+
+  a {
+    text-align: center;
+    color: $light-button;
+    text-decoration: none;
+    padding: 0.5em;
+    flex: 1;
+
+    mat-icon {
+      vertical-align: middle;
+      font-size: 1.8em;
+    }
+
+    &:not(.active) .active-icon {
+      display: none;
+    }
+
+    &.active {
+      color: $active-link;
+
+      .inactive-icon {
+        display: none;
+      }
+    }
+  }
+}
+
+.slogan {
+  text-align: center;
+  margin: $medium-margin 0;
+}
+
+og-login {
+  display: block;
+  margin: $medium-margin 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  padding-top: 2em;
+
+  a {
+    text-decoration: none;
+    transition: color .2s;
+  }
+
+  .urls,
+  .copyright {
+    text-align: center;
+    margin: 1em;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .slogan,
+  og-login {
+    margin: $small-margin 0;
+  }
+}

@@ -1,0 +1,41 @@
+<div class="page guest-page" *ngIf="guestPage; else userPage">
+  <router-outlet></router-outlet>
+</div>
+
+<ng-template #userPage>
+  <div class="page user-page">
+    <div class="content">
+      <h1 *ngIf="!user" i18n="App title">Remind</h1>
+      <p *ngIf="!user" class="slogan" i18n="slogan|App catchline">All my reminders</p>
+      <div class="spinner-space" *ngIf="loading">
+        <mat-spinner [diameter]="32"></mat-spinner>
+      </div>
+      <div *ngIf="!loading && user">
+        <!--<og-user [user]="user" (userLoggedOut)="user = null"></og-user>-->
+        <div class="spinner-space" *ngIf="navigating">
+          <mat-spinner [diameter]="32"></mat-spinner>
+        </div>
+        <router-outlet></router-outlet>
+      </div>
+      <div *ngIf="!loading && !user">
+        <og-login (userLoggedIn)="user = $event"></og-login>
+        <og-register (userRegistered)="user = $event"></og-register>
+      </div>
+    </div>
+
+    <footer>
+      <!--
+      <div class="urls">
+        <a href="#" i18n="Terms of Use acronym">TOS</a>
+        -
+        <a href="#" i18n="Link to company legal address">Legal Notice</a>
+      </div>
+      -->
+
+      <p class="copyright">
+        &copy; Copyright 2019 -
+        <span i18n="App title">Reminder</span>
+      </p>
+    </footer>
+  </div>
+</ng-template>

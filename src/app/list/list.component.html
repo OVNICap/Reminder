@@ -1,0 +1,67 @@
+<h1>
+  <button [routerLink]="['/lists']" mat-icon-button>
+    <i class="material-icons">arrow_back</i>
+  </button>
+  {{ name }}
+  <mat-spinner [diameter]="16" *ngIf="!name"></mat-spinner>
+</h1>
+
+<mat-card *ngIf="items && items.length">
+  <ul>
+    <li *ngFor="let item of items">
+      {{ item.name }}
+      <button (click)="delete(item)" mat-icon-button>
+        <i class="material-icons">delete</i>
+      </button>
+    </li>
+  </ul>
+</mat-card>
+
+<mat-card *ngIf="items">
+  <form [formGroup]="newItemForm" (ngSubmit)="create()">
+    <mat-form-field>
+      <input type="text" placeholder="First item" i18n-placeholder aria-label="Item name" i18n-aria-label matInput formControlName="name" required>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-placeholder i18n>Start</mat-placeholder>
+      <mat-datetimepicker-toggle [for]="startPicker" matSuffix></mat-datetimepicker-toggle>
+      <mat-datetimepicker #startPicker type="date" openOnFocus="true" timeInterval="5" panelClass="due-date-time-picker"></mat-datetimepicker>
+      <input matInput formControlName="start" [matDatetimepicker]="startPicker" required autocomplete="false" [min]="now">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-placeholder i18n>End</mat-placeholder>
+      <mat-datetimepicker-toggle [for]="endPicker" matSuffix></mat-datetimepicker-toggle>
+      <mat-datetimepicker #endPicker type="date" openOnFocus="true" timeInterval="5" panelClass="due-date-time-picker"></mat-datetimepicker>
+      <input matInput formControlName="end" [matDatetimepicker]="endPicker" required autocomplete="false" [min]="now">
+    </mat-form-field>
+    <mat-form-field>
+      <input type="text" placeholder="8:00,12:30,19:00" i18n-placeholder aria-label="Hours" i18n-aria-label matInput formControlName="hours">
+    </mat-form-field>
+    <mat-form-field>
+      <textarea placeholder="Quantity (or quantity calculation formula)" i18n-placeholder aria-label="Quantity" i18n-aria-label matInput formControlName="quantity"></textarea>
+    </mat-form-field>
+    <div>
+      <button type="submit" mat-flat-button color="primary" [disabled]="submitting" i18n>Add</button>
+      <mat-spinner [diameter]="16" *ngIf="submitting"></mat-spinner>
+    </div>
+  </form>
+</mat-card>
+
+<mat-card>
+  <p i18n>
+    Quantity might be a number or a formula. Formulas can use variables:
+  </p>
+  <p>
+    <code>days</code>
+    <span i18n>it gives you the nth day from the start</span>
+  </p>
+  <p>
+    <code>rest</code>
+    <span i18n>it gives you the nth day from the end</span>
+  </p>
+  <p>
+    <code>weekDay</code>
+    <span i18n>it will be 1 if it's Monday, 2 if it's Tuesday, ... 7 if it's Sunday.</span>
+  </p>
+</mat-card>
+
