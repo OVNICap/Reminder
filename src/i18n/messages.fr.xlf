@@ -141,85 +141,76 @@
         <note priority="1" from="description">App title</note>
       </trans-unit><trans-unit id="ec9a6bc82210e0105ef45b65c45fde85b2d810e1" datatype="html">
         <source>First item</source><target state="final">Premier élément</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/list/list.component.html</context>
-          <context context-type="linenumber">12</context>
-        </context-group>
-      </trans-unit><trans-unit id="f85ba58b6078977cf5335c980ee2eb4efeb0a64c" datatype="html">
+        
+      <context-group purpose="location"><context context-type="sourcefile">app/list/list.component.html</context><context context-type="linenumber">23</context></context-group></trans-unit><trans-unit id="f85ba58b6078977cf5335c980ee2eb4efeb0a64c" datatype="html">
         <source>Item name</source><target state="final">Nom de l'élément</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/list/list.component.html</context>
-          <context context-type="linenumber">12</context>
-        </context-group>
-      </trans-unit><trans-unit id="8434d4a28744d7df82cd39ef8da4266fcbc40064" datatype="html">
+        
+      <context-group purpose="location"><context context-type="sourcefile">app/list/list.component.html</context><context context-type="linenumber">23</context></context-group></trans-unit><trans-unit id="8434d4a28744d7df82cd39ef8da4266fcbc40064" datatype="html">
         <source>Start</source><target state="final">Début</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/list/list.component.html</context>
-          <context context-type="linenumber">15</context>
-        </context-group>
-      </trans-unit><trans-unit id="b68ce78c3f2c548391d812c248217f8a212491e1" datatype="html">
+        
+      <context-group purpose="location"><context context-type="sourcefile">app/list/list.component.html</context><context context-type="linenumber">26</context></context-group></trans-unit><trans-unit id="b68ce78c3f2c548391d812c248217f8a212491e1" datatype="html">
         <source>End</source><target state="final">Fin</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/list/list.component.html</context>
-          <context context-type="linenumber">21</context>
-        </context-group>
-      </trans-unit><trans-unit id="ab21ab68ee334da6678c93acc994be42d3190d32" datatype="html">
+        
+      <context-group purpose="location"><context context-type="sourcefile">app/list/list.component.html</context><context context-type="linenumber">32</context></context-group></trans-unit><trans-unit id="ab21ab68ee334da6678c93acc994be42d3190d32" datatype="html">
         <source>8:00,12:30,19:00</source><target state="final">8:00,12:30,19:00</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/list/list.component.html</context>
-          <context context-type="linenumber">27</context>
-        </context-group>
-      </trans-unit><trans-unit id="3bbce5fef7e1151da052a4e529453edb340e3912" datatype="html">
+        
+      <context-group purpose="location"><context context-type="sourcefile">app/list/list.component.html</context><context context-type="linenumber">38</context></context-group></trans-unit><trans-unit id="3bbce5fef7e1151da052a4e529453edb340e3912" datatype="html">
         <source>Hours</source><target state="final">Heures</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/list/list.component.html</context>
-          <context context-type="linenumber">27</context>
-        </context-group>
-      </trans-unit><trans-unit id="f40932c4961010f6dba9ce8c1a0e2e566b8aefef" datatype="html">
+        
+      <context-group purpose="location"><context context-type="sourcefile">app/list/list.component.html</context><context context-type="linenumber">38</context></context-group></trans-unit><trans-unit id="f40932c4961010f6dba9ce8c1a0e2e566b8aefef" datatype="html">
         <source>Quantity (or quantity calculation formula)</source><target state="final">Quantité (ou formule de calcul de la quantité)</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/list/list.component.html</context>
-          <context context-type="linenumber">30</context>
-        </context-group>
-      </trans-unit><trans-unit id="ca30c1aa79fb5ab487fbd2caa4ca01f2f6691d70" datatype="html">
+        
+      <context-group purpose="location"><context context-type="sourcefile">app/list/list.component.html</context><context context-type="linenumber">41</context></context-group></trans-unit><trans-unit id="ca30c1aa79fb5ab487fbd2caa4ca01f2f6691d70" datatype="html">
         <source>Quantity</source><target state="final">Quantité</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/list/list.component.html</context>
-          <context context-type="linenumber">30</context>
-        </context-group>
-      </trans-unit><trans-unit id="f6755cff4957d5c3c89bafce5651f1b6fa2b1fd9" datatype="html">
+        
+      <context-group purpose="location"><context context-type="sourcefile">app/list/list.component.html</context><context context-type="linenumber">41</context></context-group></trans-unit><trans-unit id="f6755cff4957d5c3c89bafce5651f1b6fa2b1fd9" datatype="html">
         <source>Add</source><target state="final">Ajouter</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/list/list.component.html</context>
-          <context context-type="linenumber">33</context>
-        </context-group>
-      </trans-unit><trans-unit id="2ddabfefc95aa7bbeec03c31c04e9404ac440dc4" datatype="html">
+        
+      <context-group purpose="location"><context context-type="sourcefile">app/list/list.component.html</context><context context-type="linenumber">44</context></context-group></trans-unit><trans-unit id="2ddabfefc95aa7bbeec03c31c04e9404ac440dc4" datatype="html">
         <source>
     Quantity might be a number or a formula. Formulas can use variables:
   </source><target state="final">
     La quantité peut être un nombre ou une formule. Les formules peuvent utiliser des variables :
   </target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/list/list.component.html</context>
-          <context context-type="linenumber">40</context>
-        </context-group>
-      </trans-unit><trans-unit id="1d0debbd6cdae0b261fbe4179820ee5bcc4ab700" datatype="html">
+        
+      <context-group purpose="location"><context context-type="sourcefile">app/list/list.component.html</context><context context-type="linenumber">51</context></context-group></trans-unit><trans-unit id="1d0debbd6cdae0b261fbe4179820ee5bcc4ab700" datatype="html">
         <source>it gives you the nth day from the start</source><target state="final">donne le nième jour en partant du début</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/list/list.component.html</context>
-          <context context-type="linenumber">45</context>
-        </context-group>
-      </trans-unit><trans-unit id="6465733a588b9883062cb640237add52d0388512" datatype="html">
+        
+      <context-group purpose="location"><context context-type="sourcefile">app/list/list.component.html</context><context context-type="linenumber">56</context></context-group></trans-unit><trans-unit id="6465733a588b9883062cb640237add52d0388512" datatype="html">
         <source>it gives you the nth day from the end</source><target state="final">donne le nième jour en partant de la fin</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/list/list.component.html</context>
-          <context context-type="linenumber">49</context>
-        </context-group>
-      </trans-unit><trans-unit id="f2b160092bd9961d537d289efd195069ac9a1b26" datatype="html">
+        
+      <context-group purpose="location"><context context-type="sourcefile">app/list/list.component.html</context><context context-type="linenumber">60</context></context-group></trans-unit><trans-unit id="f2b160092bd9961d537d289efd195069ac9a1b26" datatype="html">
         <source>it will be 1 if it's Monday, 2 if it's Tuesday, ... 7 if it's Sunday.</source><target state="final">vaut 1 si on est lundi, 2 si on est mardi, ... 7 si on est dimanche.</target>
+        
+      <context-group purpose="location"><context context-type="sourcefile">app/list/list.component.html</context><context context-type="linenumber">64</context></context-group></trans-unit><trans-unit id="cac91f62e3c8b7a1e1831957a3e5d73493791e64" datatype="html">
+        <source>the day of the month from 1 to 28-31</source><target state="final">le jour du mois de 1 à 28-31</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/list/list.component.html</context>
-          <context context-type="linenumber">53</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit><trans-unit id="1e4807cda5d98a22e60d6c9fe89af8c1e2a01f3b" datatype="html">
+        <source>the hour from 0 to 23</source><target state="final">l'heure de 0 à 23</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/list/list.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit><trans-unit id="be2c89042a33a9fd0fd4853f47c6573af43ead5b" datatype="html">
+        <source>the minute from 0 to 59</source><target state="final">la minute de 0 à 59</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/list/list.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit><trans-unit id="646099eb5c9a1995e34beb472a7a735a938a75ff" datatype="html">
+        <source>the month number from 1 to 12</source><target state="final">le numéro du mois de 1 à 12</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/list/list.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit><trans-unit id="dac1864566477badeb36242a60f014ea388c806b" datatype="html">
+        <source>the year on 4 digits</source><target state="final">l'année sur 4 chiffres</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/list/list.component.html</context>
+          <context context-type="linenumber">84</context>
         </context-group>
       </trans-unit><trans-unit id="bece2f8c4d35c2748eecc4bfdc67ff8911edd383" datatype="html">
         <source>
@@ -227,20 +218,17 @@
   </source><target state="final">
     Listes
   </target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/lists/lists.component.html</context>
-          <context context-type="linenumber">6</context>
-        </context-group>
-      </trans-unit><trans-unit id="7dab1ed4813993e7e1a4dc82b77f5ff8f6fa7a73" datatype="html">
+        
+      <context-group purpose="location"><context context-type="sourcefile">app/lists/lists.component.html</context><context context-type="linenumber">5</context></context-group></trans-unit><trans-unit id="7dab1ed4813993e7e1a4dc82b77f5ff8f6fa7a73" datatype="html">
         <source>Pharmaceuticals</source><target state="final">Médicaments</target>
         
-      <context-group purpose="location"><context context-type="sourcefile">app/lists/lists.component.html</context><context context-type="linenumber">21</context></context-group></trans-unit><trans-unit id="81e25d6b94153f566603cf0edc10f4e7b082aa49" datatype="html">
+      <context-group purpose="location"><context context-type="sourcefile">app/lists/lists.component.html</context><context context-type="linenumber">20</context></context-group></trans-unit><trans-unit id="81e25d6b94153f566603cf0edc10f4e7b082aa49" datatype="html">
         <source>List name</source><target state="final">Nom de la liste</target>
         
-      <context-group purpose="location"><context context-type="sourcefile">app/lists/lists.component.html</context><context context-type="linenumber">21</context></context-group></trans-unit><trans-unit id="70a67e04629f6d412db0a12d51820b480788d795" datatype="html">
+      <context-group purpose="location"><context context-type="sourcefile">app/lists/lists.component.html</context><context context-type="linenumber">20</context></context-group></trans-unit><trans-unit id="70a67e04629f6d412db0a12d51820b480788d795" datatype="html">
         <source>Create</source><target state="final">Créer</target>
         
-      <context-group purpose="location"><context context-type="sourcefile">app/lists/lists.component.html</context><context context-type="linenumber">24</context></context-group></trans-unit>
+      <context-group purpose="location"><context context-type="sourcefile">app/lists/lists.component.html</context><context context-type="linenumber">23</context></context-group></trans-unit>
       
       
       
