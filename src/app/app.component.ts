@@ -20,8 +20,6 @@ export class AppComponent implements OnInit, OnDestroy {
   loading = true;
   navigating = false;
   user: UserInterface;
-  commonTextWatched = false;
-  commonText = '';
 
   private querySubscription: Subscription;
 
@@ -52,7 +50,6 @@ export class AppComponent implements OnInit, OnDestroy {
         id,
         token,
       }, userService.getUserDataFields()).subscribe((result: ApolloQueryResult<LoginLoclhostResultInterface>) => {
-        console.log(result);
         if (!result.data.loginLocalhost) {
           return;
         }
