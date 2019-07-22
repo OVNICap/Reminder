@@ -1,5 +1,5 @@
 import { EventEmitter, Injectable } from '@angular/core';
-import { ApiService, QueryInterface } from '@ovnigames/framework';
+import { ApiService, IQuery } from '@ovnigames/framework';
 import { ApolloQueryResult } from 'apollo-client';
 import { combineLatest, Observable, of } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
@@ -24,7 +24,7 @@ interface RemindItem {
 }
 
 export interface RemindGroupResult {
-  remindGroups: QueryInterface<RemindGroup[]>;
+  remindGroups: IQuery<RemindGroup[]>;
 }
 
 export interface CreateRemindGroupResult {

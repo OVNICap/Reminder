@@ -1,12 +1,12 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'apollo-client/util/Observable';
-import { ApiService, UserInterface, UserService, User } from '@ovnigames/framework';
+import { ApiService, IUser, UserService, User } from '@ovnigames/framework';
 import { environment } from '../environments/environment';
 import { NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router } from '@angular/router';
 import { ApolloQueryResult } from 'apollo-client';
 import { ListsService } from './lists.service';
 
-export interface LoginLoclhostResultInterface {
+export interface ILoginLocalhostResult {
   loginLocalhost: User | null;
 }
 
@@ -19,7 +19,7 @@ export class AppComponent implements OnInit, OnDestroy {
   guestPage: boolean;
   loading = true;
   navigating = false;
-  user: UserInterface;
+  user: IUser;
 
   private querySubscription: Subscription;
 
@@ -46,17 +46,17 @@ export class AppComponent implements OnInit, OnDestroy {
         id,
         token,
       });
-      this.api.mutate<LoginLoclhostResultInterface>('loginLocalhost', {
+      this.api.mutate<ILoginLocalhostResult>('loginLocalhost', {
         id,
         token,
-      }, userService.getUserDataFields()).subscribe((result: ApolloQueryResult<LoginLoclhostResultInterface>) => {
+      }, userService.getUserDataFields()).subscribe((result: ApolloQueryResult<ILoginLocalhostResult>) => {
         if (!result.data.loginLocalhost) {
           return;
         }
 
-        const user = new User(result.data.loginLocalhost, undefined, (properties: UserInterface) => {
+        const user = new User(result.data.loginLocalhost, undefined, (properties: IUser) => {
           properties.id = user!.id;
-          this.api.mutate<{updateUser: UserInterface}>('updateUser', properties, 'updated_at').subscribe((updateResult: ApolloQueryResult<{updateUser: UserInterface}>) => {
+          this.api.mutate<{updateUser: IUser}>('updateUser', properties, 'updated_at').subscribe((updateResult: ApolloQueryResult<{updateUser: IUser}>) => {
             user.updated_at = updateResult.data.updateUser!.updated_at;
           });
         });

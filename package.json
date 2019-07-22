@@ -33,7 +33,7 @@
     "@angular/platform-browser-dynamic": "^8.1.2",
     "@angular/router": "^8.1.2",
     "@mat-datetimepicker/core": "^2.0.1",
-    "@ovnigames/framework": "^0.2.0",
+    "@ovnigames/framework": "^0.3.0",
     "apollo-angular": "^1.6.0",
     "apollo-angular-link-http": "^1.8.0",
     "apollo-cache-inmemory": "^1.6.2",
