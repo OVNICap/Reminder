@@ -1,10 +1,10 @@
 import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { ApiService } from '@ovnigames/framework';
+import { ApiService, findMyTimezone, findTimezone, ITimezone, User, UserService } from '@ovnigames/framework';
 import { Subject } from 'rxjs';
 import { ApolloQueryResult } from 'apollo-client';
 import { MatDatetimepicker } from '@mat-datetimepicker/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { switchMap, takeUntil, tap } from 'rxjs/operators';
 import { ListsService } from '../lists.service';
 
@@ -49,9 +49,11 @@ export class ListComponent implements OnInit, OnDestroy {
   public id: string = null;
   public name: string = null;
   public items: RemindItem[] = null;
+  public timezone?: ITimezone;
 
   @ViewChild('dueDatePicker', {static: false}) private dueDatePicker: MatDatetimepicker<Date>;
 
+  private user: User;
   private listItemsFields = `
     id
     name
@@ -61,7 +63,12 @@ export class ListComponent implements OnInit, OnDestroy {
     quantity
   `;
 
-  constructor(private api: ApiService, private listsService: ListsService, private activatedRoute: ActivatedRoute) {
+  constructor(
+    private api: ApiService,
+    private listsService: ListsService,
+    private activatedRoute: ActivatedRoute,
+    private userService: UserService,
+  ) {
   }
 
   public ngOnInit(): void {
@@ -75,8 +82,32 @@ export class ListComponent implements OnInit, OnDestroy {
       tap(list => {
         this.name = list.name;
         this.items = list.items;
-      })
+      }),
     ).subscribe();
+
+    this.userService.getCurrent().pipe(
+      takeUntil(this.destroySubject),
+      tap((user: User) => {
+        this.user = user;
+        this.timezone = findTimezone(user.timezone);
+
+        if (!this.timezone) {
+          this.timezone = findMyTimezone();
+          this.saveTimezone(this.timezone);
+        }
+      }),
+    ).subscribe();
+  }
+
+  public saveTimezone(timezone: ITimezone): void {
+    this.userService.updateTimezone(this.user.id, timezone).finally(() => {
+      this.timezone = timezone;
+    });
+  }
+
+  public updateTimezone(timezone: ITimezone): void {
+    this.timezone = undefined;
+    this.saveTimezone(timezone);
   }
 
   public ngOnDestroy(): void {
@@ -104,8 +135,8 @@ export class ListComponent implements OnInit, OnDestroy {
       end: value.end.toISOString(),
       hours: value.hours.replace(/\n/g, ',').replace(/\s/g, '').split(',').map((time: string) => {
         const [hours, minutes] = (time + ':').split(':');
-        const hoursNumber = parseInt(hours);
-        const minutesNumber = parseInt(minutes) | 0;
+        const hoursNumber = parseInt(hours, 10);
+        const minutesNumber = parseInt(minutes.replace(/\D/g, ''), 10);
 
         if (isNaN(hoursNumber) || hoursNumber >= 24 || hoursNumber < 0 || minutesNumber >= 60 || minutesNumber < 0) {
           return null;

@@ -60,6 +60,10 @@ mat-card {
   margin-bottom: 32px;
 }
 
+og-timezone-selector mat-form-field {
+  width: 100%;
+}
+
 @media screen and (max-width: 340px) {
   .mat-datetimepicker-popup {
     transform: scale(.7) translateY(120px);

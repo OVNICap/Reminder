@@ -26,10 +26,7 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor(private api: ApiService, private userService: UserService, private listsService: ListsService, private router: Router) {
     userService.setUserDataFields(`
       id
-      firstname
-      lastname
-      name
-      photo_updated_at
+      timezone
       room
     `);
     api.config(environment);
@@ -55,10 +52,15 @@ export class AppComponent implements OnInit, OnDestroy {
         }
 
         const user = new User(result.data.loginLocalhost, undefined, (properties: IUser) => {
-          properties.id = user!.id;
-          this.api.mutate<{updateUser: IUser}>('updateUser', properties, 'updated_at').subscribe((updateResult: ApolloQueryResult<{updateUser: IUser}>) => {
-            user.updated_at = updateResult.data.updateUser!.updated_at;
-          });
+          if (user) {
+            properties.id = user.id;
+          }
+          this.api.mutate<{updateUser: IUser}>('updateUser', properties, 'updated_at')
+            .subscribe((updateResult: ApolloQueryResult<{updateUser: IUser}>) => {
+              if (updateResult.data.updateUser) {
+                user.updated_at = updateResult.data.updateUser.updated_at;
+              }
+            });
         });
         userService.registerUser(user, true);
         this.user = user;

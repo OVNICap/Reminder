@@ -11,7 +11,7 @@ import {
 } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { OvniGamesModule } from '@ovnigames/framework';
+import {OvniGamesModule, TimezoneSelectorModule} from '@ovnigames/framework';
 import { MatDatetimepickerModule, MatNativeDatetimeModule } from '@mat-datetimepicker/core';
 import { RouterModule } from '@angular/router';
 
@@ -38,6 +38,7 @@ import { RouterModule } from '@angular/router';
     MatAutocompleteModule,
     MatIconModule,
     RouterModule,
+    TimezoneSelectorModule,
   ],
 })
 export class ListModule {

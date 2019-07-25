@@ -48,6 +48,13 @@
 </mat-card>
 
 <mat-card>
+  <mat-spinner [diameter]="24" *ngIf="!user || !timezone"></mat-spinner>
+  <div *ngIf="user && timezone">
+    <p i18n>
+      Hours are based on your preferred timezone:
+    </p>
+    <og-timezone-selector [value]="timezone" (valueChange)="updateTimezone($event)"></og-timezone-selector>
+  </div>
   <p i18n>
     Quantity might be a number or a formula. Formulas can use variables:
   </p>
