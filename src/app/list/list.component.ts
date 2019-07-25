@@ -122,6 +122,17 @@ export class ListComponent implements OnInit, OnDestroy {
     }).subscribe();
   }
 
+  public getDateIsoString(date: Date, hour: number, minute: number, seconds: number, milliseconds: number) {
+    const newDate = new Date();
+    newDate.setTime(date.getTime());
+    newDate.setHours(hour);
+    newDate.setMinutes(minute);
+    newDate.setSeconds(seconds);
+    newDate.setMilliseconds(milliseconds);
+
+    return newDate.toISOString();
+  }
+
   public create(): void {
     if (!this.newItemForm.valid) {
       return;
@@ -131,8 +142,8 @@ export class ListComponent implements OnInit, OnDestroy {
     this.api.mutate<CreateRemindItemResult>('createRemindItem', {
       group_id: this.id,
       name: value.name,
-      start: value.start.toISOString(),
-      end: value.end.toISOString(),
+      start: this.getDateIsoString(value.start, 0, 0, 0, 0),
+      end: this.getDateIsoString(value.end, 23, 59, 59, 999),
       hours: value.hours.replace(/\n/g, ',').replace(/\s/g, '').split(',').map((time: string) => {
         const [hours, minutes] = (time + ':').split(':');
         const hoursNumber = parseInt(hours, 10);
